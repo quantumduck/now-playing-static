@@ -198,12 +198,22 @@ figure {
 
 @media (min-width: 768px) {
 
+  .site-logo {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    z-index: 200;
+  }
+
   .site-nav {
     position: fixed;
-    top: 0;
+    top: 60px;
     bottom: 0;
     left: 0;
-    width: 7%;
+    width: 60px;
     z-index: 100;
     background-color: #ffffff;
   }
@@ -217,4 +227,15 @@ figure {
     font-size: 0.6em;
     text-align: center;
     text-transform: uppercase;
+  }
+
+    body {
+      margin: 0;
+
+      /*
+        We need to add some padding to the left of the body on 768
+      */
+      padding-bottom: 0px;
+      padding-left: 60px;
+    }
 }
