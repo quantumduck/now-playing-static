@@ -243,4 +243,22 @@ figure {
 
 @media (min-width: 992px) {
 
+  .movie-backdrop {
+    display: none;
+  }
+
+  .movie {
+    /*display: inline-block;*/
+    float: left;
+    max-width: 33.3333%
+  }
+
+  .movie-poster {
+    display: block;
+    /*max-width: 33.3333%;*/
+  }
+
+  main:nth-child(3n) {
+    clear: left;
+  }
 }
