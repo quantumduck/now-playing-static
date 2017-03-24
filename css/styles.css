@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  width: 100%;
   color: #333333;
 }
 
@@ -29,7 +30,7 @@ body {
 */
 img {
   max-width: 100%;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 }
 
 figure {
@@ -240,6 +241,7 @@ figure {
       /*
         We need to add some padding to the left of the body on 768
       */
+      width: 100%;
       padding-bottom: 0px;
       padding-left: 5rem;
     }
@@ -303,4 +305,22 @@ figure {
     html {
       font-size: 24px;
     }
+}
+
+@media (min-width: 1397px) {
+
+  body {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+
+  /*.movie:first-child {*/
+    /*max-width: 66.66667%;*/
+    /*float: left;*/
+  /*}*/
+
+
+
+
 }
