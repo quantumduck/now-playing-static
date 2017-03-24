@@ -29,6 +29,7 @@ body {
 */
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 figure {
@@ -243,6 +244,14 @@ figure {
 
 @media (min-width: 992px) {
 
+  /*main {*/
+    /*background-color: #000000;*/
+  }
+
+  footer {
+    clear: both;
+  }
+
   .movie-backdrop {
     display: none;
   }
@@ -255,10 +264,28 @@ figure {
 
   .movie-poster {
     display: block;
+    background-color: #000000;
+    vertical-align: middle;
     /*max-width: 33.3333%;*/
   }
 
-  main:nth-child(3n) {
-    clear: left;
+  .movie:nth-child(3n+2) {
+    clear: both;
+  }
+
+  .movie:first-child {
+    max-width: 100%;
+  }
+
+  .movie:first-child .movie-backdrop{
+    display: block;
+  }
+
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+
+  .movie:first-child .movie-overview {
+    display: block;
   }
 }
